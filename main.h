@@ -5,10 +5,11 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-int print_c(va_list args);
-int print_s(va_list args);
-int print_percent(va_list args);
 char *itoa(int n, char *s);
 void rev_string(char *s);
+int print_c(va_list arg);
+int print_s(va_list arg);
+int print_percent(va_list arg);
+int _strlen(char *str);
 
 #endif
