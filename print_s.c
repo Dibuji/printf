@@ -12,11 +12,12 @@
 int print_s(va_list args)
 {
 	char *str = va_arg(args, char *);
+	unsigned int strlen = _strlen(str);
 
-	if (str == NULL)
-		str = "(null)";
+	if (strlen == 0)
+		return (0);
 
-	return (write(1, str, _strlen(str)));
+	return (write(1, str, strlen(str)));
 }
 
 /**
@@ -38,3 +39,4 @@ int _strlen(char *str)
 
 	return (len);
 }
+

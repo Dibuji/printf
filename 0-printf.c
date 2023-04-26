@@ -26,6 +26,8 @@ int _printf(const char *format, ...)
 				total += print_c(args);
 			else if (format[i] == 's')
 				total += print_s(args);
+			else if (format[i] == 'd' || format[i] == 'i')
+				total += printi(args)
 			else if (format[i] == '%')
 				total += print_percent(args);
 			else
@@ -47,3 +49,4 @@ int _printf(const char *format, ...)
 
 	return (total);
 }
+
