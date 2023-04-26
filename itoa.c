@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * itoa - takes an integer and converts to a stream of digits
  * @n: the integer

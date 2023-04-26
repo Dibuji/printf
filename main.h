@@ -6,7 +6,7 @@
 
 int _printf(const char *format, ...);
 char *itoa(int n, char *s);
-void revstring(char *s);
+void revstr(char *s);
 int print_c(va_list arg);
 int print_s(va_list arg);
 int print_percent(va_list arg);
