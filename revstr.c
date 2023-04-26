@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * revstr - takes a string and reverses it
  * @s: the input string
