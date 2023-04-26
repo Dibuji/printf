@@ -6,10 +6,12 @@
 
 int _printf(const char *format, ...);
 char *itoa(int n, char *s);
-void rev_string(char *s);
+void revstring(char *s);
 int print_c(va_list arg);
 int print_s(va_list arg);
 int print_percent(va_list arg);
+int printd(va_list list);
+int printi(va_list list);
 int _strlen(char *str);
 
 #endif
