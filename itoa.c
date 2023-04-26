@@ -20,6 +20,6 @@ char *itoa(int n, char *s)
 		s[i++] = '-';
 	}
 	s[i] = '\0';
-	revstring(s);
+	revstr(s);
 	return (s);
 }
