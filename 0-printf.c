@@ -21,19 +21,18 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			i++;
-			if (format[i] == 'c')
+			if (format[i + 1] == 'c')
 				total += print_c(args);
-			else if (format[i] == 's')
+			else if (format[i + 1] == 's')
 				total += print_s(args);
 			else if (format[i] == 'd' || format[i] == 'i')
 				total += printi(args);
-			else if (format[i] == '%')
+			else if (format[i + 1] == '%')
 				total += print_percent(args);
 			else
 			{
 				write(1, "%", 1);
-				write(1, &format[i], 1);
+				write(1, &format[i + 1], 1);
 				total += 2;
 			}
 		}
