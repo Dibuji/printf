@@ -8,10 +8,8 @@
  * Return: the number of characters printed
  */
 
-int print_percent(va_list args)
+int print_percent(__attribute__((unused)) va_list args)
 {
-	(void)args;
-
 	return (write(1, "%", 1));
 }
 

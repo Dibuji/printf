@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * itoa - takes an integer and converts to a stream of digits
  * @n: the integer
@@ -20,6 +22,6 @@ char *itoa(int n, char *s)
 		s[i++] = '-';
 	}
 	s[i] = '\0';
-	revstr(s);
+	revstring(s);
 	return (s);
 }
