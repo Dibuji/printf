@@ -5,6 +5,7 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
+int _putchar(char c);
 char *itoa(int n, char *s);
 void revstring(char *s);
 int print_c(va_list args);
@@ -15,6 +16,7 @@ int print_i(va_list list);
 int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
+int printf_p(va_list args);
 
 /**
  * struct print_t - declares print_t structure
