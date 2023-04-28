@@ -13,3 +13,4 @@ int print_c(va_list args)
 	return (write(1, &c, 1));
 }
 
+

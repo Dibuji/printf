@@ -15,9 +15,11 @@ int printi(va_list list);
 int _strlen(char *str);
 
 /**
- * print_t - declares print_t structure
+ * struct print_t - declares print_t structure
  * @type: character
- * @func: pointer to function to use
+ * @f: pointer to function to use
+ *
+ * Description: structure for storing print types
  */
 
 typedef struct print_t
@@ -27,3 +29,4 @@ typedef struct print_t
 } print_t;
 
 #endif
+
