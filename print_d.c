@@ -20,7 +20,7 @@ int print_d(va_list args)
 
 	if (num / 10)
 		total += print_d_helper(num / 10);
-	
+
 	unit = num % 10 + '0';
 	total += write(STDOUT_FILENO, &unit, 1);
 
@@ -39,7 +39,7 @@ int print_d_helper(int num)
 	char unit;
 
 	if (num / 10)
-		total += print_d_helper(num/10);
+		total += print_d_helper(num / 10);
 
 	unit = num % 10 + '0';
 	total += write(STDOUT_FILENO, &unit, 1);
