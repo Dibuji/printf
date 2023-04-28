@@ -10,9 +10,10 @@ void revstring(char *s);
 int print_c(va_list args);
 int print_s(va_list args);
 int print_percent(va_list args);
-int printd(va_list list);
-int printi(va_list list);
+int print_d(va_list list);
+int print_i(va_list list);
 int _strlen(char *str);
+int print_d_helper(int num);
 
 /**
  * struct print_t - declares print_t structure
