@@ -13,6 +13,7 @@ int print_percent(va_list args);
 int printd(va_list list);
 int printi(va_list list);
 int _strlen(char *str);
+
 /**
  * print_t - declares print_t structure
  * @type: character
