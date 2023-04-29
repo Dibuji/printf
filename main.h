@@ -15,6 +15,10 @@ int print_i(va_list list);
 int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
+int print_o(va_list args);
+int print_x(va_list args);
+int print_upper_x(va_list args);
+int print_u(va_list args);
 
 /**
  * struct print_t - declares print_t structure
