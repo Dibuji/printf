@@ -3,8 +3,8 @@
 
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdlib.h>
 
-int print_hexa(unsigned long int num);
 int _printf(const char *format, ...);
 int _putchar(char c);
 char *itoa(int n, char *s);
@@ -17,12 +17,10 @@ int print_i(va_list list);
 int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
-<<<<<<< HEAD
 int print_o(va_list args);
 int print_x(va_list args);
 int print_upper_x(va_list args);
 int print_u(va_list args);
-int print_p(va_list args);
 
 /**
  * struct print_t - declares print_t structure

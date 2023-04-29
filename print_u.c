@@ -8,17 +8,29 @@
 
 int print_u(va_list args)
 {
-	int total = 0;
-	char c;
+	int total = 0, digit, i;
+	char *c;
 
 	unsigned int num = va_arg(args, unsigned int);
 
-	if (num / 10)
-		total += print_u(args);
+	if (num == 0)
+		return (_putchar('0'));
 
-	c = num % 10 + '0';
+	c = malloc(sizeof(char) * 32);
+	if (c == NULL)
+		return (-1);
 
-	total += write(STDOUT_FILENO, &c, 1);
+	for (i = 0; num != 0; i++)
+	{
+		digit = num % 10;
+		c[i] = digit + '0';
+		num /= 10;
+	}
+
+	for (i--; i >= 0; i--)
+		total += _putchar(c[i]);
+
+	free(c);
 
 	return (total);
 }
