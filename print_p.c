@@ -1,12 +1,11 @@
 #include "main.h"
 #include <unistd.h>
-
 /**
- * printf_p - prints a pointer to a variable
+ * print_p - prints a pointer to a variable
  * @arg: arguments.
  * Return: number of chars printed
  */
-int printf_p(va_list arg)
+int print_p(va_list arg)
 {
 	void *ptr;
 	char *str = "(nil)";
@@ -19,7 +18,7 @@ int printf_p(va_list arg)
 	{
 		for (; str[i] != '\0'; i++)
 		{
-			_putchar(s[i]);
+			_putchar(str[i]);
 		}
 		return (i);
 	}
@@ -27,6 +26,6 @@ int printf_p(va_list arg)
 	temp = (unsigned long int)ptr;
 	_putchar('0');
 	_putchar('x');
-	hex_val = printf_hex(temp);
+	hex_val = print_hexa(temp);
 	return (hex_val + 2);
 }

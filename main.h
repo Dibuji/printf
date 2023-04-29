@@ -16,7 +16,8 @@ int print_i(va_list list);
 int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
-int printf_p(va_list args);
+int print_p(va_list args);
+int print_hexa(unsigned long int num);
 
 /**
  * struct print_t - declares print_t structure
