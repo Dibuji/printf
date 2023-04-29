@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #define BUFFER_SIZE 1024
+
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -25,7 +26,6 @@ int print_x(va_list args);
 int print_upper_x(va_list args);
 int print_u(va_list args);
 
-
 /**
  * struct print_t - declares print_t structure
  * @type: character
@@ -41,4 +41,3 @@ typedef struct print_t
 } print_t;
 
 #endif
-
