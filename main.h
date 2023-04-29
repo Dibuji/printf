@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define BUFFER_SIZE 1024
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -9,12 +10,14 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 char *itoa(int n, char *s);
 void revstring(char *s);
+int _strlen(char *str);
+
+/* format specifiers */
 int print_c(va_list args);
 int print_s(va_list args);
 int print_percent(va_list args);
 int print_d(va_list list);
 int print_i(va_list list);
-int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
 int print_o(va_list args);
