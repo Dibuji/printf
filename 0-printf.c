@@ -14,19 +14,10 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	print_t types[] = {
-		{'d', print_d},
-		{'i', print_i},
-		{'c', print_c},
-		{'s', print_s},
-		{'b', print_b},
-		{'%', print_percent},
-		{'p', print_p},
-		{'R', rot13},
-		{'r', strreverse},
 		{'d', print_d}, {'i', print_i}, {'c', print_c}, {'s', print_s},
 		{'b', print_b}, {'%', print_percent}, {'x', print_x}, {'X', print_upper_x},
-		{'u', print_u}, {'o', print_o},
-		{'\0', NULL}
+		{'u', print_u}, {'o', print_o}, {'R', rot13}, {'p', print_p},
+		{'r', strreverse}, {'\0', NULL}
 	};
 
 	va_start(args, format);
