@@ -4,7 +4,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-int print_hexa(unsigned long int num);
 int _printf(const char *format, ...);
 int _putchar(char c);
 char *itoa(int n, char *s);
@@ -18,7 +17,8 @@ int _strlen(char *str);
 int print_d_helper(int num);
 int print_b(va_list args);
 int print_p(va_list args);
-
+int strreverse(va_list args);
+int rot13(va_list args);
 /**
  * struct print_t - declares print_t structure
  * @type: character

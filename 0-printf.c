@@ -21,6 +21,8 @@ int _printf(const char *format, ...)
 		{'b', print_b},
 		{'%', print_percent},
 		{'p', print_p},
+		{'R', rot13},
+		{'r', strreverse},
 		{'\0', NULL}
 	};
 
